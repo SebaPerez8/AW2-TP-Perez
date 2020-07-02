@@ -92,9 +92,34 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="FOTOS\01.jpg" />
+    <Content Include="FOTOS\02.jpg" />
+    <Content Include="FOTOS\03.jpg" />
+    <Content Include="FOTOS\04.jpg" />
+    <Content Include="FOTOS\05.jpg" />
+    <Content Include="FOTOS\06.jpg" />
+    <Content Include="FOTOS\07.jpg" />
+    <Content Include="FOTOS\08.jpg" />
+    <Content Include="FOTOS\09.jpg" />
+    <Content Include="FOTOS\10.jpg" />
+    <Content Include="FOTOS\11.jpg" />
+    <Content Include="FOTOS\12.jpg" />
+    <Content Include="FOTOS\13.jpg" />
+    <Content Include="FOTOS\14.jpg" />
+    <Content Include="GustanDeMi.aspx" />
     <Content Include="Web.config" />
+    <Content Include="Identificarse.aspx" />
+    <Content Include="VerFotos.aspx" />
+    <Content Include="NosGustamos.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GustanDeMi.aspx.designer.vb">
+      <DependentUpon>GustanDeMi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GustanDeMi.aspx.vb">
+      <DependentUpon>GustanDeMi.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -113,6 +138,35 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Maestra.Master.designer.vb">
+      <DependentUpon>Maestra.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Maestra.Master.vb">
+      <DependentUpon>Maestra.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Identificarse.aspx.designer.vb">
+      <DependentUpon>Identificarse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Identificarse.aspx.vb">
+      <DependentUpon>Identificarse.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Clase\Usuarios.vb" />
+    <Compile Include="VerFotos.aspx.designer.vb">
+      <DependentUpon>VerFotos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VerFotos.aspx.vb">
+      <DependentUpon>VerFotos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="NosGustamos.aspx.designer.vb">
+      <DependentUpon>NosGustamos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NosGustamos.aspx.vb">
+      <DependentUpon>NosGustamos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -134,6 +188,7 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="packages.config" />
+    <Content Include="Maestra.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
