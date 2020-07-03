@@ -1,8 +1,11 @@
 ﻿Public Class Site1
     Inherits System.Web.UI.MasterPage
 
-    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+
+    Protected Sub lnkCerrarSesion_Click(sender As Object, e As EventArgs) Handles lnkCerrarSesion.Click
+
+        Session("valor") = ""
+        Response.Redirect("Identificarse.aspx")
 
     End Sub
-
 End Class

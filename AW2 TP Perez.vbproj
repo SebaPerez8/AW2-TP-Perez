@@ -34,6 +34,7 @@
     <OutputPath>bin\</OutputPath>
     <DocumentationFile>AW2 TP Perez.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -92,6 +93,8 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="EMOJIS\enamorado.png" />
+    <Content Include="EMOJIS\enojado.png" />
     <Content Include="FOTOS\01.jpg" />
     <Content Include="FOTOS\02.jpg" />
     <Content Include="FOTOS\03.jpg" />
@@ -107,10 +110,10 @@
     <Content Include="FOTOS\13.jpg" />
     <Content Include="FOTOS\14.jpg" />
     <Content Include="GustanDeMi.aspx" />
-    <Content Include="Web.config" />
     <Content Include="Identificarse.aspx" />
-    <Content Include="VerFotos.aspx" />
     <Content Include="NosGustamos.aspx" />
+    <Content Include="VerFotos.aspx" />
+    <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GustanDeMi.aspx.designer.vb">
@@ -118,6 +121,13 @@
     </Compile>
     <Compile Include="GustanDeMi.aspx.vb">
       <DependentUpon>GustanDeMi.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Identificarse.aspx.designer.vb">
+      <DependentUpon>Identificarse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Identificarse.aspx.vb">
+      <DependentUpon>Identificarse.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -146,26 +156,19 @@
       <DependentUpon>Maestra.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Identificarse.aspx.designer.vb">
-      <DependentUpon>Identificarse.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Identificarse.aspx.vb">
-      <DependentUpon>Identificarse.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
     <Compile Include="Clase\Usuarios.vb" />
-    <Compile Include="VerFotos.aspx.designer.vb">
-      <DependentUpon>VerFotos.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="VerFotos.aspx.vb">
-      <DependentUpon>VerFotos.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
     <Compile Include="NosGustamos.aspx.designer.vb">
       <DependentUpon>NosGustamos.aspx</DependentUpon>
     </Compile>
     <Compile Include="NosGustamos.aspx.vb">
       <DependentUpon>NosGustamos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VerFotos.aspx.designer.vb">
+      <DependentUpon>VerFotos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VerFotos.aspx.vb">
+      <DependentUpon>VerFotos.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>
@@ -211,6 +214,9 @@
   </PropertyGroup>
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
