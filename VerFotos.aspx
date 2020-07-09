@@ -6,16 +6,15 @@
 
   <div align="center">
       <h2>VER FOTOS</h2>
-          <asp:Image ID="imgFotos" runat="server" ImageUrl="~/FOTOS/01.jpg" />
+          <asp:Image ID="imgFotos" runat="server" ImageUrl="~/FOTOS/01.jpg" Height="380px" Width="360px" />
           <br />
           <br />
-          <asp:Label ID="lblApodo" runat="server" Text="APODO"></asp:Label>
+          <asp:Label ID="lblApodo" runat="server"></asp:Label>
           <br />
       <br />
-      <asp:Image ID="imgEnamorado" runat="server" ImageUrl="~/EMOJIS/enamorado.png" Width="100px" />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <asp:Image ID="imgEnojado" runat="server" ImageUrl="~/EMOJIS/enojado.png" Width="100px" />
-          <br />
+      <asp:ImageButton ID="imgEnamorado" runat="server" ImageUrl="~/EMOJIS/enamorado.png" Width="100px" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:ImageButton ID="imgEnojado" runat="server" ImageUrl="~/EMOJIS/enojado.png" Width="100px" />
+&nbsp;<br />
    </div>
  
 </asp:Content>

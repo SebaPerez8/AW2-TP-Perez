@@ -10,6 +10,10 @@
         End If
 
 
+
     End Sub
 
+    Protected Sub imgEnojado_Click(sender As Object, e As ImageClickEventArgs) Handles imgEnojado.Click
+
+    End Sub
 End Class

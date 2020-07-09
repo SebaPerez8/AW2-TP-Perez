@@ -112,6 +112,7 @@
     <Content Include="GustanDeMi.aspx" />
     <Content Include="Identificarse.aspx" />
     <Content Include="NosGustamos.aspx" />
+    <Content Include="Estilos.css" />
     <Content Include="VerFotos.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>

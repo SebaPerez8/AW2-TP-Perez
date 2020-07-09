@@ -1,0 +1,48 @@
+﻿body {
+    background-color:lightcoral;
+}
+.identificarse {
+    padding: 70px 0;
+    border: 3px solid red;
+    text-align: center;
+    
+}
+.titulo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: normal;
+    background-color: #FF5B5B;
+    position: relative;
+    color: #FFFFFF;
+    text-align: center;
+    margin: auto;
+  
+    padding: 10px;
+    height:100px;
+}
+.navegacion {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: #FF5B5B;
+    color: #FFFFFF;
+    height: 20px;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+
+a {
+    color: #FFFFFF;
+    
+}
+a:hover {
+     color: Highlight;
+ }
+
+#lnkCerrarSesion {
+    color: Highlight;
+}
+#lnkCerrarSesion:hover {
+        color: #FFFFFF;
+}

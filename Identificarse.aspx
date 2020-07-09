@@ -6,9 +6,11 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
+    <link href="Estilos.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form1" runat="server" class="identificarse">
+        <h2>BIENVENIDO, COMPLETAR DATOS PARA INGRESAR A SITIO</h2> 
         <div>
             E-EMAIL<br />
             <asp:TextBox ID="txtEmail" runat="server" Width="330px"></asp:TextBox>

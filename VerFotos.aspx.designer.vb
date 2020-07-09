@@ -38,7 +38,7 @@ Partial Public Class VerFotos
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents imgEnamorado As Global.System.Web.UI.WebControls.Image
+    Protected WithEvents imgEnamorado As Global.System.Web.UI.WebControls.ImageButton
 
     '''<summary>
     '''Control imgEnojado.
@@ -47,5 +47,5 @@ Partial Public Class VerFotos
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents imgEnojado As Global.System.Web.UI.WebControls.Image
+    Protected WithEvents imgEnojado As Global.System.Web.UI.WebControls.ImageButton
 End Class
