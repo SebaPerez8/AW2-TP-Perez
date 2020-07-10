@@ -5,7 +5,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
   <div align="center">
-      <h2>VER FOTOS</h2>
+      <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VER FOTOS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </h2>
           <asp:Image ID="imgFotos" runat="server" ImageUrl="~/FOTOS/01.jpg" Height="380px" Width="360px" />
           <br />
           <br />

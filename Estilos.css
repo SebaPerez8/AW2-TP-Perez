@@ -41,7 +41,7 @@ a:hover {
  }
 
 #lnkCerrarSesion {
-    color: Highlight;
+    color: blue;
 }
 #lnkCerrarSesion:hover {
         color: #FFFFFF;

@@ -13,11 +13,13 @@
         <h2>BIENVENIDO, COMPLETAR DATOS PARA INGRESAR A SITIO</h2> 
         <div>
             E-EMAIL<br />
-            <asp:TextBox ID="txtEmail" runat="server" Width="330px"></asp:TextBox>
+            <asp:TextBox ID="txtEmail" runat="server" Width="280px" style="margin-left: 101px"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtEmail" ErrorMessage="Completar email" Font-Bold="True"></asp:RequiredFieldValidator>
             <br />
             <br />
             CONTRASEÑA<br />
-            <asp:TextBox ID="txtPalabra" runat="server" Width="330px"></asp:TextBox>
+            <asp:TextBox ID="txtPalabra" runat="server" Width="280px" style="margin-left: 141px"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtPalabra" ErrorMessage="Completar contraseña" Font-Bold="True"></asp:RequiredFieldValidator>
             <br />
             <br />
             <asp:Button ID="bIngresar" runat="server" Text="INGRESAR" Width="144px" /> 

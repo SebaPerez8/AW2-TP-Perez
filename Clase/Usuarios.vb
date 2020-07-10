@@ -65,7 +65,7 @@ Public Class Usuarios
 
     Public Sub BuscarM()
 
-        SQL = "SELECT foto, apodo FROM Usuarios WHERE sexo = 'M'"
+        SQL = "SELECT apodo, foto FROM Usuarios WHERE sexo = 'M'"
         CONECTOR.Open()
         COMANDO.Connection = CONECTOR
         COMANDO.CommandType = CommandType.Text
@@ -83,6 +83,7 @@ Public Class Usuarios
         CONECTOR.Close()
 
     End Sub
+
 
 
 End Class
