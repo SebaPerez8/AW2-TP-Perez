@@ -10,8 +10,10 @@ Public Class Identificarse
         Dim VALOR As Boolean = objUSU.ValidarUsuario(txtEmail.Text, txtPalabra.Text)
         If VALOR = True Then
             Session("valor") = VALOR
+            Session("usuario") = objUSU.usuario
+            Session("sexo") = objUSU.sexo
+            Session("apodo") = objUSU.apodo
             Response.Redirect("VerFotos.aspx")
-
         End If
 
     End Sub

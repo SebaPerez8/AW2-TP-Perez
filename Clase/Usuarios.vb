@@ -8,9 +8,18 @@ Public Class Usuarios
     Dim COMANDO As New SqlCommand
     Dim SQL As String = ""
 
+
+    Public Property usuario() As Long
+    Public Property email() As String
+    Public Property clave() As String
+    Public Property sexo() As Char
+    Public Property apodo() As String
+    Public Property foto() As String
+
+
     Public Function ValidarUsuario(ByVal EMAIL As String, ByVal PALABRA As String) As Boolean
         Dim VALOR As Boolean = False
-        SQL = "SELECT email, palabra FROM Usuarios WHERE email=@email AND palabra=@palabra"
+        SQL = "SELECT * FROM Usuarios WHERE email=@email AND palabra=@palabra"
         CONECTOR.Open()
         COMANDO.Connection = CONECTOR
         COMANDO.CommandType = CommandType.Text
@@ -22,6 +31,9 @@ Public Class Usuarios
         If DR.HasRows = True Then
             DR.Read()
             If DR("email") = EMAIL And DR("palabra") = PALABRA Then
+                sexo = DR("sexo")
+                usuario = DR("usuario")
+                apodo = DR("apodo")
                 VALOR = True
             End If
         End If
@@ -30,9 +42,47 @@ Public Class Usuarios
         Return VALOR
     End Function
 
+    Public Sub BuscarF()
 
+        SQL = "SELECT foto, apodo FROM Usuarios WHERE sexo = 'F'"
+        CONECTOR.Open()
+        COMANDO.Connection = CONECTOR
+        COMANDO.CommandType = CommandType.Text
+        COMANDO.CommandText = SQL
+        COMANDO.Parameters.Clear()
+        Dim DR As SqlDataReader = COMANDO.ExecuteReader()
+        If DR.HasRows = True Then
+            DR.Read()
 
+            foto = DR("foto")
+            apodo = DR("apodo")
 
+        End If
+
+        CONECTOR.Close()
+
+    End Sub
+
+    Public Sub BuscarM()
+
+        SQL = "SELECT foto, apodo FROM Usuarios WHERE sexo = 'M'"
+        CONECTOR.Open()
+        COMANDO.Connection = CONECTOR
+        COMANDO.CommandType = CommandType.Text
+        COMANDO.CommandText = SQL
+        COMANDO.Parameters.Clear()
+        Dim DR As SqlDataReader = COMANDO.ExecuteReader()
+        If DR.HasRows = True Then
+            DR.Read()
+
+            foto = DR("foto")
+            apodo = DR("apodo")
+
+        End If
+
+        CONECTOR.Close()
+
+    End Sub
 
 
 End Class

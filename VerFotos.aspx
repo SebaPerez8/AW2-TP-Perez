@@ -9,7 +9,7 @@
           <asp:Image ID="imgFotos" runat="server" ImageUrl="~/FOTOS/01.jpg" Height="380px" Width="360px" />
           <br />
           <br />
-          <asp:Label ID="lblApodo" runat="server"></asp:Label>
+          <asp:Label ID="lblApodo" runat="server" Font-Size="XX-Large"></asp:Label>
           <br />
       <br />
       <asp:ImageButton ID="imgEnamorado" runat="server" ImageUrl="~/EMOJIS/enamorado.png" Width="100px" />

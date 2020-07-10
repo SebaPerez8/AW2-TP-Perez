@@ -9,7 +9,15 @@
             Response.Redirect("Identificarse.aspx")
         End If
 
-
+        If Session("sexo") = "M" Then
+            objUSU.BuscarF()
+            lblApodo.Text = objUSU.apodo
+            imgFotos.ImageUrl = "~/FOTOS/" & objUSU.foto
+        Else
+            objUSU.BuscarM()
+            lblApodo.Text = objUSU.apodo
+            imgFotos.ImageUrl = "~/FOTOS/" & objUSU.foto
+        End If
 
     End Sub
 
